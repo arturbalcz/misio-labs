@@ -1,6 +1,8 @@
 from ._env import TrivialVacuumEnvironmentWithChildren as _env
+
 DEFAULT_STEPS = 50
 DEFAULT_TEST_RUNS = 5000
+
 
 def test_locally(agent_creator, steps=DEFAULT_STEPS, n=DEFAULT_TEST_RUNS, seed=None, progress_bar=True):
     from ..util import generate_deterministic_seeds
